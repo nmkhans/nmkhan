@@ -11,7 +11,7 @@ const Home = () => {
       </Head>
       <div className="inner__home container mx-auto">
         <main className="home__content">
-
+          
         </main>
       </div>
     </section>
