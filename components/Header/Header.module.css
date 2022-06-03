@@ -1,0 +1,53 @@
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.header__nav ul {
+    margin-right: 50px;
+}
+
+.header__nav ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.header__nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.header__nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 16%;
+    height: 1px;
+    width: 0%;
+    background: #5e2ced;
+    transition: .5s;
+}
+
+.header__nav ul li a:hover::after {
+    width: 70%;
+    color: #5e2ced;
+}
+
+.active {
+    position: relative;
+    color: #5e2ced;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 16%;
+    height: 1px;
+    width: 70% !important;
+    background: #5e2ced;
+}
