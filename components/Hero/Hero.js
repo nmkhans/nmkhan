@@ -45,7 +45,7 @@ const Hero = () => {
                                         className="text-secondary text-6xl font-semibold ml-3"
                                         strings={['Moin Khan', 'Front-End Developer', 'Mern Stack Developer']}
                                         typeSpeed={40}
-                                        backSpeed={50}
+                                        backSpeed={40}
                                         loop
                                     />
                                 </motion.h1>
