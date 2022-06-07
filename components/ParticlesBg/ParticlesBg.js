@@ -57,7 +57,7 @@ const ParticlesBg = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 4,
+                        speed: 3,
                         straight: false,
                     },
                     number: {
@@ -74,7 +74,7 @@ const ParticlesBg = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 7 },
+                        value: { min: 1, max: 8 },
                     },
                 },
                 detectRetina: true,
