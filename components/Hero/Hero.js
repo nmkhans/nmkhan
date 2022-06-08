@@ -15,7 +15,7 @@ const Hero = () => {
                 opacity: 1,
                 transition: {
                     type: "spring",
-                    duration: 1,
+                    duration: 1.5,
                     bounce: 0.3
                 }
             });
