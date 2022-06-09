@@ -1,3 +1,5 @@
+@import '../../styles/global.scss';
+
 .Header {
     padding: 10px 0;
 }
@@ -42,13 +44,13 @@
             left: 16%;
             height: 1px;
             width: 0%;
-            background: #5e2ced;
+            background: $primary;
             transition: .5s;
         }
 
         &:hover::after {
             width: 70%;
-            color: #5e2ced;
+            color: $primary;
         }
     }
 }
@@ -56,7 +58,7 @@
 
 .active {
     position: relative;
-    color: #5e2ced !important;
+    color: $primary !important;
 
     &:after {
         content: "";
@@ -65,7 +67,7 @@
         left: 16%;
         height: 1px;
         width: 70% !important;
-        background: #5e2ced;
+        background: $primary;
     }
 }
 
@@ -92,7 +94,7 @@
             width: 250px;
             border-radius: 10px;
             background: #fff;
-            border: 1px solid #5e2ced;
+            border: 1px solid $primary;
 
             li {
                 display: block;
