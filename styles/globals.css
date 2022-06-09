@@ -14,3 +14,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #f7fdfc;
 }
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}

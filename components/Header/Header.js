@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <div className={`${styles.Header} ${sticky ? styles.sticky : ""}`}>
-            <div className="inner__header container mx-auto">
+            <div className="inner__header container">
                 <nav className={styles.header__content}>
                     <div className={styles.header__logo}>
                         <Link href="/">
