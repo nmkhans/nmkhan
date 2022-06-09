@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 
 const Hero = () => {
     return (
-        <div className={styles.Hero}>
+        <section className={styles.Hero}>
             <div className="inner__hero container">
                 <div className={styles.hero__content}>
                     <div className={styles.hero__content__text}>
@@ -17,14 +17,14 @@ const Hero = () => {
                             loop
                         />
                         <p>Nothing is impossible on the web, Let&apos;s execute your idea into the website and
-                            start your business or startup today. </p>
+                            start your business or startup today.</p>
                     </div>
                     <div className={styles.hero__button}>
                         <button>Let&apos;s get started</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

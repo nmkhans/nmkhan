@@ -13,6 +13,7 @@ const Home = () => {
       <div className="inner__home">
         <main className="home__content">
           <Hero />
+          
         </main>
       </div>
     </section>
