@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import styles from '../Header/Header.module.css';
+import styles from '../Header/Header.module.scss';
 
 const ActiveLink = ({children, href}) => {
     const router = useRouter();
