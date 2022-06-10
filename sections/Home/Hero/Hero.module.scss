@@ -1,4 +1,4 @@
-@import '../../styles/global.scss';
+@import '../../../styles/global';
 
 .Hero {
     background: #f7fdfc;
@@ -20,7 +20,7 @@
 
     h2 {
         display: inline-block;
-        color: $heading;
+        color: $heading-color;
         font-size: 60px;
         font-weight: 600;
         margin-right: 10px;
@@ -28,7 +28,7 @@
 
     .typed__text {
         display: inline;
-        color: $heading;
+        color: $heading-color;
         font-size: 60px;
         font-weight: 600;
         line-height: 60px;
@@ -50,7 +50,7 @@
         border: none;
         outline: none;
         background: #e8e1fc;
-        color: $primary;
+        color: $primary-color;
         height: 50px;
         width: 180px;
         border-radius: 5px;
@@ -62,7 +62,7 @@
         transition: .4s;
 
         &:hover {
-            background: $primary;
+            background: $primary-color;
             color: #fff;
         }
     }

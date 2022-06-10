@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Hero from './../components/Hero/Hero';
+import Hero from '../sections/Home/Hero/Hero';
 
 const Home = () => {
   return (

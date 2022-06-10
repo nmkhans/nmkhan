@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: #fff !important;
     z-index: 999;
 }
 
@@ -18,6 +18,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center
+}
+
+.header__logo {
+    margin-top: -10px;
 }
 
 .header__nav {
@@ -45,13 +49,13 @@
             left: 16%;
             height: 1px;
             width: 0%;
-            background: $primary;
+            background: $primary-color;
             transition: .5s;
         }
 
         &:hover::after {
             width: 70%;
-            color: $primary;
+            color: $primary-color;
         }
     }
 }
@@ -59,7 +63,7 @@
 
 .active {
     position: relative;
-    color: $primary !important;
+    color: $primary-color  !important;
 
     &:after {
         content: "";
@@ -68,7 +72,7 @@
         left: 16%;
         height: 1px;
         width: 70% !important;
-        background: $primary;
+        background: $primary-color;
     }
 }
 
@@ -95,7 +99,7 @@
             width: 250px;
             border-radius: 10px;
             background: #fff;
-            border: 1px solid $primary;
+            border: 1px solid $primary-color;
 
             li {
                 display: block;
