@@ -10,15 +10,18 @@ const Features = () => {
                     <SingleFeature 
                     src="/assets/maintainance.jpg" 
                     title="Full website creation" 
-                    description="Create any type of website for your business." />
+                    description="Create any type of website for your business."
+                    num="1" />
                     <SingleFeature 
                     src="/assets/onlineshop.jpg" 
                     title="Eye catching design" 
-                    description="Develop a full functional online ecommerce shop" />
+                    description="Develop a full functional online ecommerce shop" 
+                    num="2" />
                     <SingleFeature 
                     src="/assets/bugfixing.jpg" 
                     title="Solve problem and fix bug" 
-                    description="Fix complex problems &#38; bugs for your website." />
+                    description="Fix complex problems &#38; bugs for your website."
+                    num="3" />
                 </div>
             </div>
         </section>
