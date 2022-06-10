@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Hero.module.scss';
 import Typed from 'react-typed';
+import Image from 'next/image';
 
 const Hero = () => {
     return (
@@ -22,6 +23,9 @@ const Hero = () => {
                     <div className={styles.hero__button}>
                         <button>Let&apos;s get started</button>
                     </div>
+                </div>
+                <div className={styles.hero__image}>
+                    <Image src="/assets/hero.png" height="526" width="1286" alt="Hero Image" />
                 </div>
             </div>
         </section>

@@ -2,7 +2,7 @@
 
 .Hero {
     background: #f7fdfc;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
 }
 
 .hero__content {
@@ -66,4 +66,9 @@
             color: #fff;
         }
     }
+}
+
+.hero__image {
+    text-align: center;
+    margin-top: -50px;
 }
