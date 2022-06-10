@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Hero from '../sections/Home/Hero/Hero';
-import AboutMe from '../sections/Home/About/About';
+import About from '../sections/Home/About/About';
 import Features from '../sections/Home/Features/Features';
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
         <main className="home__content">
           <Hero />
           <Features />
-          {/* <AboutMe /> */}
+          <About />
         </main>
       </div>
     </section>
