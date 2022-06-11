@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Hero from '../sections/Home/Hero/Hero';
 import About from '../sections/Home/About/About';
 import Features from '../sections/Home/Features/Features';
+import MySkills from './../sections/Home/MySkills/MySkills';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
           <Hero />
           <Features />
           <About />
+          <MySkills />
         </main>
       </div>
     </section>
