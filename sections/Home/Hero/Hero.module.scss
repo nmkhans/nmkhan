@@ -45,14 +45,12 @@
 .hero__button {
     text-align: center;
 
-    button {
+    a {
         display: inline-block;
-        border: none;
-        outline: none;
+        text-decoration: none;
         background: #e8e1fc;
         color: $primary-color;
-        height: 50px;
-        width: 180px;
+        padding: 15px 40px;
         border-radius: 5px;
         font-size: 14px;
         font-weight: 500;

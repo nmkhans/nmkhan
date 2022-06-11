@@ -2,8 +2,10 @@ import React from 'react';
 import styles from './Hero.module.scss';
 import Typed from 'react-typed';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
+
     return (
         <section className={styles.Hero}>
             <div className="inner__hero container">
@@ -21,7 +23,10 @@ const Hero = () => {
                             start your business or startup today.</p>
                     </div>
                     <div className={styles.hero__button}>
-                        <button>Let&apos;s get started</button>
+                        <Link href={`https://drive.google.com/uc?id=1QvSk9xkRlq_SJ805pxdHC29tqph58CHQ&export=download`} >
+                            <a download>Let&apos;s get started</a>
+                        </Link>
+
                     </div>
                 </div>
                 <div className={styles.hero__image}>

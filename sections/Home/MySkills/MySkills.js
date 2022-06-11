@@ -13,10 +13,10 @@ const MySkills = () => {
                 <div className={styles.myskills__content}>
                     <Skill 
                     src="/assets/html.png" 
-                    title="html" />
+                    title="HTML 5" />
                     <Skill 
                     src="/assets/css.png" 
-                    title="css" />
+                    title="CSS 3" />
                     <Skill 
                     src="/assets/bootstrap.png" 
                     title="Bootstrap" />
