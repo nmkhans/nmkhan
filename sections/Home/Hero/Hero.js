@@ -23,7 +23,7 @@ const Hero = () => {
                             start your business or startup today.</p>
                     </div>
                     <div className={styles.hero__button}>
-                        <Link href={`https://drive.google.com/uc?id=1QvSk9xkRlq_SJ805pxdHC29tqph58CHQ&export=download`} >
+                        <Link href="/assets/Moin-Khan.pdf" >
                             <a download>Let&apos;s get started</a>
                         </Link>
 
