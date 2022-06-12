@@ -4,6 +4,7 @@ import Hero from '../sections/Home/Hero/Hero';
 import About from '../sections/Home/About/About';
 import Features from '../sections/Home/Features/Features';
 import MySkills from './../sections/Home/MySkills/MySkills';
+import Projects from './../sections/Projects/Projects';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
           <Features />
           <About />
           <MySkills />
+          <Projects />
         </main>
       </div>
     </section>

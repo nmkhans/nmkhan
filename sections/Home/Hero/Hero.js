@@ -26,7 +26,6 @@ const Hero = () => {
                         <Link href="/assets/Moin-Khan.pdf" >
                             <a download>Let&apos;s get started</a>
                         </Link>
-
                     </div>
                 </div>
                 <div className={styles.hero__image}>
