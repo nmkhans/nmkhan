@@ -33,7 +33,7 @@ export async function getServerSideProps() {
   const result = await axios.get('http://localhost:5000/projects');
   return {
       props: {
-          projects: result.data,
+          projects: result?.data,
       }
   }
 } 
