@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import Head from 'next/head';
 import axios from 'axios';
 import Hero from '../sections/Home/Hero/Hero';
@@ -7,7 +7,9 @@ import Features from '../sections/Home/Features/Features';
 import MySkills from './../sections/Home/MySkills/MySkills';
 import Projects from './../sections/Home/Projects/Projects';
 
-const Home = ({projects}) => {
+
+const AppData = createContext();
+const Home = (props) => {
 
   return (
     <section className="Home">
@@ -18,11 +20,13 @@ const Home = ({projects}) => {
       </Head>
       <div className="inner__home">
         <main className="home__content">
-          <Hero />
-          <Features />
-          <About />
-          <MySkills />
-          <Projects projects={projects} />
+          <AppData.Provider value={props} >
+            <Hero />
+            <Features />
+            <About />
+            <MySkills />
+            <Projects />
+          </AppData.Provider>
         </main>
       </div>
     </section>
@@ -30,12 +34,13 @@ const Home = ({projects}) => {
 }
 
 export async function getServerSideProps() {
-  const result = await axios.get('http://localhost:5000/projects');
+  const projectData = await axios.get('http://localhost:5000/projects');
   return {
-      props: {
-          projects: result?.data,
-      }
+    props: {
+      projects: projectData?.data
+    }
   }
-} 
+}
 
+export { AppData };
 export default Home;

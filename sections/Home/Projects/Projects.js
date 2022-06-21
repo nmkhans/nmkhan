@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import styles from './Projects.module.scss';
 import ProjectBox from './ProjectBox/ProjectBox';
+import { AppData } from '../../../pages';
 
-const Projects = ({projects}) => {
+const Projects = () => {
+    const {projects} = useContext(AppData);
 
     return (
         <section className={styles.Projects}>
