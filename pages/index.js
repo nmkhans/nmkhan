@@ -6,11 +6,11 @@ import About from '../sections/Home/About/About';
 import Features from '../sections/Home/Features/Features';
 import MySkills from './../sections/Home/MySkills/MySkills';
 import Projects from './../sections/Home/Projects/Projects';
+import ContactMe from './../sections/Home/ContactMe/ContactMe';
 
 
-const AppData = createContext();
+const HomeData = createContext();
 const Home = (props) => {
-
   return (
     <section className="Home">
       <Head>
@@ -20,13 +20,14 @@ const Home = (props) => {
       </Head>
       <div className="inner__home">
         <main className="home__content">
-          <AppData.Provider value={props} >
+          <HomeData.Provider value={props} >
             <Hero />
             <Features />
             <About />
             <MySkills />
             <Projects />
-          </AppData.Provider>
+            <ContactMe />
+          </HomeData.Provider>
         </main>
       </div>
     </section>
@@ -42,5 +43,5 @@ export async function getServerSideProps() {
   }
 }
 
-export { AppData };
+export { HomeData };
 export default Home;

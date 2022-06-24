@@ -11,7 +11,7 @@ const Header = () => {
     useEffect(() => {
         window.addEventListener('scroll', () => {
             const currentLocation = window.pageYOffset;
-            if(currentLocation > 200) {
+            if (currentLocation > 200) {
                 setSticky(true)
             } else {
                 setSticky(false)
@@ -19,7 +19,29 @@ const Header = () => {
         })
     }, [])
 
+    const navItem = () => {
+        return (
+            <ul>
+                <li>
+                    <ActiveLink href={'/'}>Home</ActiveLink>
+                </li>
+                <li>
+                    <ActiveLink href={'/my-projects'}>My Projects</ActiveLink>
+                </li>
+                <li>
+                    <ActiveLink href={'/about-me'}>About Me</ActiveLink>
+                </li>
+                <li>
+                    <ActiveLink href={'/blog'}>Blog</ActiveLink>
+                </li>
+                <li>
+                    <ActiveLink href={'/contact'}>Contact Me</ActiveLink>
+                </li>
+            </ul>
+        )
+    }
     return (
+
         <div className={`${styles.Header} ${sticky ? styles.sticky : ""}`}>
             <div className="inner__header container">
                 <nav className={styles.header__content}>
@@ -37,23 +59,9 @@ const Header = () => {
                     </div>
                     <div className={styles.header__nav}>
                         <div className={styles.desktop__menu}>
-                            <ul>
-                                <li>
-                                    <ActiveLink href={'/'}>Home</ActiveLink>
-                                </li>
-                                <li>
-                                    <ActiveLink href={'/my-projects'}>My Projects</ActiveLink>
-                                </li>
-                                <li>
-                                    <ActiveLink href={'/about-me'}>About Me</ActiveLink>
-                                </li>
-                                <li>
-                                    <ActiveLink href={'/blog'}>Blog</ActiveLink>
-                                </li>
-                                <li>
-                                    <ActiveLink href={'/contact-me'}>Contact Me</ActiveLink>
-                                </li>
-                            </ul>
+                            {
+                                navItem()
+                            }
                         </div>
                         <div className={styles.mobile__menu}>
                             <div onClick={() => setMobilMenu(!mobileMenu)} className={styles.mobile__icon}>
@@ -62,25 +70,7 @@ const Header = () => {
                                 }
                             </div>
                             {
-                                mobileMenu && (
-                                    <ul>
-                                        <li>
-                                            <ActiveLink href={'/'}>Home Mobile</ActiveLink>
-                                        </li>
-                                        <li>
-                                            <ActiveLink href={'/my-projects'}>My Projects</ActiveLink>
-                                        </li>
-                                        <li>
-                                            <ActiveLink href={'/about-me'}>About Me</ActiveLink>
-                                        </li>
-                                        <li>
-                                            <ActiveLink href={'/blog'}>Blog</ActiveLink>
-                                        </li>
-                                        <li>
-                                            <ActiveLink href={'/contact-me'}>Contact Me</ActiveLink>
-                                        </li>
-                                    </ul>
-                                )
+                                mobileMenu && navItem()
                             }
                         </div>
                     </div>

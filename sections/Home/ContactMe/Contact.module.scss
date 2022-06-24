@@ -1,0 +1,45 @@
+@import '../../../styles/global';
+
+.ContactMe {
+    padding: 100px 0;
+    background: $primary-color;
+}
+
+.contactMe__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contactme__text {
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #fff;
+    }
+}
+
+.contactme__button {
+    button {
+        display: inline-block;
+        border: none;
+        outline: none;
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        height: 50px;
+        width: 150px;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: .4s;
+
+        &:hover {
+            background: #fff;
+            color: $primary-color;
+        }
+    }
+}
