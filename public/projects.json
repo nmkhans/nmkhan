@@ -2,7 +2,7 @@
     {
         "title": "Hard Tools",
         "type": "Full-stack",
-        "technology": "react, node, mongo, express",
+        "technology": ["react", "node", "mongo", "express"],
         "img": ["https://i.ibb.co/5KrqsFG/hard.png", "link", "link", "link", "link", "link", "link"],
         "description": "lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content.",
         "url": "live url",
@@ -12,7 +12,7 @@
     {
         "title": "Flash Workshop",
         "type": "Full-stack",
-        "technology": "react, node, mongo, express",
+        "technology": ["react", "node", "mongo", "express"],
         "img": ["https://i.ibb.co/4m2V4v4/flash-shop.png", "link", "link", "link", "link", "link", "link"],
         "description": "lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content.",
         "url": "live url",
@@ -22,7 +22,7 @@
     {
         "title": "Tutors in",
         "type": "Full-stack",
-        "technology": "react, node, mongo, express",
+        "technology": ["react", "node", "mongo", "express"],
         "img": ["https://i.ibb.co/1mjKc7x/tutors.png", "link", "link", "link", "link", "link", "link"],
         "description": "lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content.",
         "url": "live url",
