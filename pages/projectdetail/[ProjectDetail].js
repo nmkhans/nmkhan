@@ -5,7 +5,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 const singleProject = ({ project }) => {
-    console.log(project)
 
     const techBtn = (tech, index) => {
         return (

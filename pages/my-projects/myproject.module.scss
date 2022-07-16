@@ -1,0 +1,26 @@
+@import '../../styles/global';
+
+.myProject {
+    background: $background-color;
+    padding: 100px 0;
+}
+
+.myProject__title {
+    text-align: center;
+
+    h2 {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 600;
+        color: $primary-color;
+        border-bottom: 4px solid $primary-color;
+        padding-bottom: 5px;
+    }
+}
+
+.myProject__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
