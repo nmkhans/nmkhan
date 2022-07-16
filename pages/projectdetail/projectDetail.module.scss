@@ -46,13 +46,73 @@
     .techBtn {
         width: 400px;
         span {
-            background: $primary-color;
-            color: #fff;
+            background: transparent;
+            border: 2px solid $primary-color;
+            color: $primary-color;
             display: inline-flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            padding: 8px 20px;
+            padding: 5px 15px;
             margin: 5px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.detail__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        height: 5px;
+        width: 70%;
+        margin: 0 auto;
+        background: $primary-color;
+    }
+
+    .description__content {
+        flex-basis: 750px;
+        h3 {
+            color: $primary-color;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            color: $heading-color;
+        }
+    }
+
+    .project__link {
+        text-align: center;
+
+        button {
+            display: inline-block;
+            border: 2px solid transparent;
+            outline: none;
+            background: $primary-color;
+            color: #fff;
+            height: 45px;
+            width: 130px;
+            font-weight: 600;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .4s;
+
+            &:hover {
+                color: $primary-color;
+                background: #fff;
+                border: 2px solid $primary-color;
+            }
         }
     }
 }

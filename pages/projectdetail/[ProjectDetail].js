@@ -38,7 +38,19 @@ const singleProject = ({ project }) => {
                         </div>
                     </div>
                     <div className={styles.detail__description}>
-                        
+                        <div className={styles.description__content}>
+                            <h3>Overview:</h3>
+                            <p>{project.description}</p>
+                        </div>
+                        <div className={styles.project__link}>
+                            <button onClick={() => window.open(project.url)}>Live Link</button>
+                            <button onClick={() => window.open(project.githubClient)}>Github Client</button>
+                            {
+                                project.githubServer && (
+                                    <button onClick={() => window.open(project.githubServer)}>Github Server</button>
+                                )
+                            }
+                        </div>
                     </div>
                     <div className={styles.detail__showcase}></div>
                 </div>

@@ -12,7 +12,7 @@ const ProjectBox = ({ project }) => {
             <div className={styles.project__img}>
                 <Image src={featureImg} height="640" width="1350" />
                 <div className={styles.project__detail}>
-                    <h4>project title</h4>
+                    <h4>{project.title}</h4>
                     <div className={styles.project__btn}>
                         <button onClick={() => router.push(`/projectdetail/${project._id}`)}>See detail</button>
                     </div>
