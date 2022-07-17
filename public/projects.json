@@ -21,7 +21,7 @@
     },
     {
         "title": "Tutors in",
-        "type": "Full-stack",
+        "type": "Front-end",
         "technology": ["react", "node", "mongo", "express"],
         "img": ["https://i.ibb.co/1mjKc7x/tutors.png", "link", "link", "link", "link", "link", "link"],
         "description": "lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content lorem ipsum dolor is dummy content.",

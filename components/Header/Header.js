@@ -26,7 +26,7 @@ const Header = () => {
                     <ActiveLink href={'/'}>Home</ActiveLink>
                 </li>
                 <li>
-                    <ActiveLink href={'/my-projects'}>My Projects</ActiveLink>
+                    <ActiveLink href={'/my-projects?category=All'}>My Projects</ActiveLink>
                 </li>
                 <li>
                     <ActiveLink href={'/about-me'}>About Me</ActiveLink>
