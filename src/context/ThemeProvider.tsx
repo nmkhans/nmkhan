@@ -1,13 +1,6 @@
-import React from "react";
 import { ThemeContext } from "./ThemeContext";
 import { useEffect, useState } from "react";
-
-type Theme = "light" | "dark" | "system";
-
-type ThemeProps = {
-  children: React.ReactNode;
-  defaultTheme?: Theme;
-};
+import type { Theme, ThemeProps } from "@/types/theme";
 
 const ThemeProvider = ({
   children,
