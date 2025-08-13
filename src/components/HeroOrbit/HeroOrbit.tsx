@@ -12,7 +12,7 @@ export default function HeroOrbit({
 }: PropsWithChildren<HeroOrit>) {
   return (
     <div
-      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-30"
+      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-30 animate-pulse"
       style={{
         transform: `rotate(${rotation}deg)`,
         height: `${size}px`,
