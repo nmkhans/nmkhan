@@ -1,10 +1,10 @@
 import MimojiImage from "@/assets/images/memoji-computer.png";
-import { ArrowDown, Download } from "lucide-react";
+import { Download } from "lucide-react";
 import { Button } from "../ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="py-32">
+    <section className="py-32 md:py-48">
       <div className="container mx-auto px-5 lg:px-0">
         <div className="flex flex-col items-center">
           <img
@@ -20,20 +20,22 @@ export default function HeroSection() {
               </h3>
             </div>
           </div>
-          <h1 className="font-calistoga text-3xl text-center mt-8 tracking-wide">
-            Building Exeptional Web Applications
-          </h1>
-          <p className="mt-4 text-center dark:text-white/60">
-            I specialize in transforming designs into functional,
-            high-performing web applications. Let's discuss your next
-            project.
-          </p>
-          <div className="flex flex-col lg:flex-row items-center mt-8 gap-5">
+          <div className="md:max-w-lg lg:max-w-2xl mx-auto">
+            <h1 className="font-calistoga text-3xl md:text-5xl text-center mt-8 tracking-wide">
+              Building Exeptional Web Applications
+            </h1>
+            <p className="mt-4 text-center dark:text-white/60">
+              I specialize in transforming designs into functional,
+              high-performing web applications. Let's discuss your
+              next project.
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row lg:flex-row items-center mt-8 gap-5">
             <Button
               variant="outline"
               className="h-12 rounded-lg !px-4"
             >
-              <span className="text-xl animate-pulse">👋</span>
+              <span className="text-xl animate-bounce">👋</span>
               <span>Let's Connect</span>
             </Button>
             <Button className="h-12 rounded-lg !px-4">

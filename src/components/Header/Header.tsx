@@ -3,7 +3,7 @@ import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 export default function Header() {
   return (
-    <header className="container mx-auto fixed left-0 right-0 top-3 px-5 py-1 lg:px-0">
+    <header className="container mx-auto fixed left-0 right-0 top-3 px-5 py-1 lg:px-0 backdrop-blur">
       <section className="flex justify-between items-center">
         <div className="font-logo-font text-3xl">NM Khan</div>
         <nav className="hidden lg:flex justify-center items-center grow-1">
