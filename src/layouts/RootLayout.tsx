@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 
 const RootLayout = () => {
   return (
-    <section className="antialiased">
+    <section className="font-inter antialiased">
       <Header />
       <Outlet />
     </section>
