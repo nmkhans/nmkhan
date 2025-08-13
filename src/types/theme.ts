@@ -5,7 +5,7 @@ export type ThemeProps = {
   defaultTheme?: Theme;
 };
 
-export type ContextType = {
+export type ThemeContextType = {
   theme: Theme;
   handleThemeChange: (theme: Theme) => void;
 };
