@@ -1,9 +1,16 @@
 import MobileMenu from "../MobileMenu/MobileMenu";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import useScrollDirection from "./../../hooks/useScrollDirection";
 
 export default function Header() {
+  const scrollDirection = useScrollDirection();
+
   return (
-    <header className="container mx-auto fixed left-0 right-0 lg:top-3 px-5 py-3 lg:py-1 lg:px-0 backdrop-blur lg:backdrop-blur-none z-50">
+    <header
+      className={`container mx-auto fixed left-0 right-0 ${
+        scrollDirection === "down" ? "-top-24" : "top-0 lg:top-3"
+      } px-5 py-3 lg:py-1 lg:px-0 backdrop-blur lg:backdrop-blur-none z-50 transition-all duration-500`}
+    >
       <section className="flex justify-between items-center">
         <div className="font-logo-font text-3xl backdrop-blur p-1">
           NM Khan
