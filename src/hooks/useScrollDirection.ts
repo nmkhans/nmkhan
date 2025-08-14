@@ -4,7 +4,7 @@ type scrollType = "down" | "up";
 
 export default function useScrollDirection() {
   const [scrollDirection, setScrollDirection] =
-    useState<scrollType>("down");
+    useState<scrollType>("up");
 
   useEffect(() => {
     let lastScrollY = window.pageYOffset;
@@ -22,7 +22,6 @@ export default function useScrollDirection() {
       }
 
       lastScrollY = scrollY > 0 ? scrollY : 0;
-
     };
 
     window.addEventListener("scroll", handleScrollDirectionChange);
