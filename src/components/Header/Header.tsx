@@ -1,9 +1,13 @@
+import { useLocation } from "react-router";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import useScrollDirection from "./../../hooks/useScrollDirection";
 
 export default function Header() {
   const scrollDirection = useScrollDirection();
+  const location = useLocation();
+  const active =
+    "dark:bg-white dark:text-gray-900 bg-gray-900 text-white";
 
   return (
     <header
@@ -17,22 +21,46 @@ export default function Header() {
         </div>
         <nav className="hidden lg:flex justify-center items-center grow-1">
           <ul className="w-2/5 flex justify-between items-center gap-1 p-2 border dark:border-white/15 rounded-full dark:bg-white/10 bg-white backdrop-blur">
-            <li className="nav-item">
-              <a className="inline-block" href="">
+            <li
+              className={`nav-item ${
+                location.hash === "#home" ||
+                (location.pathname === "/" && !location.hash)
+                  ? active
+                  : ""
+              }`}
+            >
+              <a className="inline-block" href="#home">
                 Home
               </a>
             </li>
-            <li className="nav-item">
-              <a className="inline-block" href="">
-                Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="inline-block" href="">
+            <li
+              className={`nav-item ${
+                location.hash === "#about" ? active : ""
+              }`}
+            >
+              <a className="inline-block" href="#about">
                 About
               </a>
             </li>
-            <li className="nav-item dark:bg-white dark:text-gray-900 bg-gray-900 text-white">
+            <li
+              className={`nav-item ${
+                location.hash === "#skills" ? active : ""
+              }`}
+            >
+              <a className="inline-block" href="#skills">
+                Skills
+              </a>
+            </li>
+            <li
+              className={`nav-item ${
+                location.hash === "#projects" ? active : ""
+              }`}
+            >
+              <a className="inline-block" href="#projects">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item ">
               <a className="inline-block" href="">
                 Contact
               </a>

@@ -13,7 +13,10 @@ export default function HeroSection() {
   const { theme } = useTheme()!;
 
   return (
-    <section className="py-32 md:py-48 relative z-0 overflow-clip">
+    <section
+      id="home"
+      className="py-32 md:py-48 relative z-0 overflow-clip"
+    >
       <div
         className="absolute inset-0 -z-30 opacity-5"
         style={{

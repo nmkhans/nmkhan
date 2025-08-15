@@ -70,7 +70,7 @@ const projects: ProjectType[] = [
 
 export default function ProjectSection() {
   return (
-    <section className="py-32">
+    <section id="projects" className="py-32">
       <div className="container">
         <div>
           <div className="flex justify-center">
@@ -81,7 +81,7 @@ export default function ProjectSection() {
           <h2 className="font-calistoga text-3xl md:text-5xl text-center mt-5">
             Featured Projects
           </h2>
-          <p className="text-center dark:text-white/60 text-gray-900/80 mt-4 md:text-lg">
+          <p className="text-center dark:text-white/60 text-gray-900/80 mt-4 md:text-lg lg:max-w-md mx-auto">
             See how I transform real world problems into digital
             solutions with my code
           </p>
