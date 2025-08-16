@@ -78,13 +78,11 @@ const skills = [
   },
 ];
 
-console.log(skills.length);
-
 export default function SkillsSection() {
   const { theme } = useTheme()!;
 
   return (
-    <section id="skills" className="py-32 border-t border-white/10">
+    <section id="skills" className="py-16 border-t border-white/10">
       <div className="container">
         <div>
           <div className="flex justify-center">
