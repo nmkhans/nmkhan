@@ -127,15 +127,23 @@ export default function HeroSection() {
           </div>
           <div className="flex flex-col md:flex-row lg:flex-row items-center mt-8 gap-5">
             <Button
+              asChild
               variant="outline"
               className="h-12 rounded-lg !px-4"
             >
-              <span className="text-xl animate-bounce">👋</span>
-              <span>Let's Connect</span>
+              <a
+                href="https://www.linkedin.com/in/nmkhans"
+                target="_blank"
+              >
+                <span className="text-xl animate-bounce">👋</span>
+                <span>Let's Connect</span>
+              </a>
             </Button>
-            <Button className="h-12 rounded-lg !px-4">
-              <Download />
-              <span>Download Resume</span>
+            <Button asChild className="h-12 rounded-lg !px-4">
+              <a href="/resume.pdf" download>
+                <Download />
+                <span>Download Resume</span>
+              </a>
             </Button>
           </div>
         </div>

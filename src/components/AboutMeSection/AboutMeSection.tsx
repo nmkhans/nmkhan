@@ -43,12 +43,19 @@ export default function AboutMeSection() {
               that make a difference in users' lives.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Button>
-                <Github /> View Github
+              <Button asChild>
+                <a href="https://github.com/nmkhans" target="_blank">
+                  <Github /> View Github
+                </a>
               </Button>
-              <Button variant="outline">
-                Let's Connect
-                <ArrowUpRight />
+              <Button asChild variant="outline">
+                <a
+                  href="https://www.linkedin.com/in/nmkhans"
+                  target="_blank"
+                >
+                  Let's Connect
+                  <ArrowUpRight />
+                </a>
               </Button>
             </div>
           </div>
