@@ -1,10 +1,9 @@
-import { Button } from "../ui/button";
-import { ArrowUpRight } from "lucide-react";
 import GrainImage from "@/assets/images/grain.jpg";
+import ContactModal from "../ContactModal/ContactModal";
 
 export default function ContactSection() {
   return (
-    <section className="py-16">
+    <section id="contact" className="py-16">
       <div className="container">
         <div className="bg-gray-400/10 dark:bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl text-center md:text-left relative z-0">
           <div
@@ -25,12 +24,7 @@ export default function ContactSection() {
               </p>
             </div>
             <div>
-              <Button className="font-semibold bg-gray-900 text-white px-6 h-12 rounded-xl dark:hover:text-gray-900">
-                Contact Me{" "}
-                <span>
-                  <ArrowUpRight size={4} />
-                </span>
-              </Button>
+              <ContactModal />
             </div>
           </div>
         </div>

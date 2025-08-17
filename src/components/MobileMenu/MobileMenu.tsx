@@ -50,6 +50,15 @@ export default function MobileMenu() {
               </li>
               <li
                 className={`nav-item ${
+                  location.hash === "#skills" ? active : ""
+                }`}
+              >
+                <a className="inline-block" href="#skills">
+                  Skills
+                </a>
+              </li>
+              <li
+                className={`nav-item ${
                   location.hash === "#projects" ? active : ""
                 }`}
               >
@@ -57,8 +66,12 @@ export default function MobileMenu() {
                   Projects
                 </a>
               </li>
-              <li className="nav-item ">
-                <a className="inline-block" href="">
+              <li
+                className={`nav-item ${
+                  location.hash === "#contact" ? active : ""
+                }`}
+              >
+                <a className="inline-block" href="#contact">
                   Contact
                 </a>
               </li>

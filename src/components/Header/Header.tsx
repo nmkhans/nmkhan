@@ -60,8 +60,12 @@ export default function Header() {
                 Projects
               </a>
             </li>
-            <li className="nav-item ">
-              <a className="inline-block" href="">
+            <li
+              className={`nav-item ${
+                location.hash === "#contact" ? active : ""
+              }`}
+            >
+              <a className="inline-block" href="#contact">
                 Contact
               </a>
             </li>
