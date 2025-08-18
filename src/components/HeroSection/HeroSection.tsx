@@ -108,7 +108,9 @@ export default function HeroSection() {
             alt="User with computer"
           />
           <div className="bg-white dark:bg-gray-950 border border-gray-900/20 dark:border-gray-800 px-4 py-1.5 flex gap-4 rounded-lg items-center">
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+            </div>
             <div>
               <h3 className="text-sm font-medium">
                 Available for new projects
