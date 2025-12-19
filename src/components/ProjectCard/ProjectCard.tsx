@@ -64,8 +64,10 @@ export default function ProjectCard({
             <Button variant="outline">
               View Detail <Bolt />
             </Button>
-            <Button>
-              Visit Live Site <ArrowUpRight />
+            <Button asChild>
+              <a target="_blank" href={project.liveUrl}>
+                Visit Live Site <ArrowUpRight />
+              </a>
             </Button>
           </div>
         </div>

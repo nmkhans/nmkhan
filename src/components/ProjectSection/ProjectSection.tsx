@@ -1,4 +1,5 @@
 import BetterHalfImg from "@/assets/images/betterhalf.png";
+import ArtistryImg from "@/assets/images/artristy.png";
 import type { ProjectType } from "@/types/project";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
@@ -7,61 +8,70 @@ const projects: ProjectType[] = [
     type: "Full Stack",
     title: "Better Half",
     overview:
-      "Better Half Jul 2025 - Jul 2025Jul 2025 - Jul 2025 Show project Better Half is an Online Matrimonial website where user can look for their desired life partner. User can search for their life partner from biodata page. They can search, sort, filter biodata according to their desire. User can be a premium member by requesting to admin. Non premium members can not view biodata picture and contact information. Once they purchase the biodata, the can view it from their dashboard. Premium members can view them without purchase. User can send contact request to user. User have their own personal dashboard form where user can view stats, manage contact requests and post success story.",
+      "Better Half is an online matrimony platform where users can find their dream life partner through detailed biodata browsing and intelligent discovery features. The platform offers interactive dashboards for both users and admins, enabling member management, request approvals, revenue tracking, and premium subscription handling.",
     challanges:
-      "I faced many challanges when developing this project.",
+      "Designing scalable dashboards for different user roles, implementing secure payment flows with Stripe, and managing access control for premium and non-premium users using JWT-based authorization were the primary challenges.",
     keyFeatures: [
-      "Firebase Authentication",
-      "JWT Authorization",
-      "Searching sorting",
-      "Premium Member",
+      "User and admin dashboards with role-based access control",
+      "Advanced biodata search with sorting, filtering, and pagination",
+      "Premium membership system with restricted biodata access",
+      "Secure Stripe integration for biodata purchases and subscriptions",
+      "Admin approval workflows and revenue tracking",
+      "JWT-protected APIs with Firebase authentication",
     ],
-    techStack: ["reactjs", "tailwindcss", "expressjs", "mongoose"],
+    techStack: [
+      "react",
+      "tailwindcss",
+      "shadcn-ui",
+      "react-hook-form",
+      "zod",
+      "firebase",
+      "tanstack-query",
+      "axios",
+      "expressjs",
+      "mongodb",
+      "mongoose",
+      "firebase-admin-sdk",
+      "jwt",
+      "stripe",
+      "http-status",
+    ],
     coverPhoto: BetterHalfImg,
     liveUrl: "https://nmk-better-half.netlify.app",
     githubFrontendUrl: "https://github.com/nmkhans/better-half",
     githubBackendUrl:
       "https://github.com/nmkhans/better-half-backend",
   },
+
   {
     type: "Full Stack",
-    title: "Plant house",
+    title: "Artistry",
     overview:
-      "Better Half Jul 2025 - Jul 2025Jul 2025 - Jul 2025 Show project Better Half is an Online Matrimonial website where user can look for their desired life partner. User can search for their life partner from biodata page. They can search, sort, filter biodata according to their desire. User can be a premium member by requesting to admin. Non premium members can not view biodata picture and contact information. Once they purchase the biodata, the can view it from their dashboard. Premium members can view them without purchase. User can send contact request to user. User have their own personal dashboard form where user can view stats, manage contact requests and post success story.",
+      "Artistry is a historical artifacts showcase platform where users can explore and learn about historical items and also contribute their own artifacts. Authenticated users can create, update, and delete their own artifacts with full CRUD functionality. The platform ensures secure access using JWT authentication and provides controlled user interactions.",
     challanges:
-      "I faced many challanges when developing this project.",
+      "Implementing secure authentication and authorization using JWT, managing user-specific CRUD permissions, and designing interaction logic to prevent duplicate likes by enforcing a dislike-before-like rule were some of the key challenges.",
     keyFeatures: [
-      "Firebase Authentication",
-      "JWT Authorization",
-      "Searching sorting",
-      "Premium Member",
+      "User authentication with Firebase and JWT verification",
+      "Protected routes for restricted artifact details and actions",
+      "Full CRUD functionality for user-owned artifacts",
+      "Like and dislike interaction logic preventing duplicate likes",
+      "Authenticated users-only access to artifact management",
     ],
-    techStack: ["reactjs", "tailwindcss", "expressjs", "mongoose"],
-    coverPhoto: BetterHalfImg,
-    liveUrl: "https://nmk-better-half.netlify.app",
-    githubFrontendUrl: "https://github.com/nmkhans/better-half",
-    githubBackendUrl:
-      "https://github.com/nmkhans/better-half-backend",
-  },
-  {
-    type: "Full Stack",
-    title: "DUI Restaurant",
-    overview:
-      "Better Half Jul 2025 - Jul 2025Jul 2025 - Jul 2025 Show project Better Half is an Online Matrimonial website where user can look for their desired life partner. User can search for their life partner from biodata page. They can search, sort, filter biodata according to their desire. User can be a premium member by requesting to admin. Non premium members can not view biodata picture and contact information. Once they purchase the biodata, the can view it from their dashboard. Premium members can view them without purchase. User can send contact request to user. User have their own personal dashboard form where user can view stats, manage contact requests and post success story.",
-    challanges:
-      "I faced many challanges when developing this project.",
-    keyFeatures: [
-      "Firebase Authentication",
-      "JWT Authorization",
-      "Searching sorting",
-      "Premium Member",
+    techStack: [
+      "react",
+      "react-router",
+      "tailwindcss",
+      "react-hook-form",
+      "firebase-authentication",
+      "expressjs",
+      "mongodb",
+      "mongoose",
+      "axios",
     ],
-    techStack: ["reactjs", "tailwindcss", "expressjs", "mongoose"],
-    coverPhoto: BetterHalfImg,
-    liveUrl: "https://nmk-better-half.netlify.app",
-    githubFrontendUrl: "https://github.com/nmkhans/better-half",
-    githubBackendUrl:
-      "https://github.com/nmkhans/better-half-backend",
+    coverPhoto: ArtistryImg,
+    liveUrl: "https://nmk-artistry.netlify.app",
+    githubFrontendUrl: "https://github.com/nmkhans/artistry",
+    githubBackendUrl: "https://github.com/nmkhans/artistry-backend",
   },
 ];
 
@@ -86,7 +96,11 @@ export default function ProjectSection() {
 
         <div className="flex flex-col mt-20 gap-10">
           {projects?.map((project, index) => (
-            <ProjectCard key={project.title} project={project} index={index} />
+            <ProjectCard
+              key={project.title}
+              project={project}
+              index={index}
+            />
           ))}
         </div>
       </div>
